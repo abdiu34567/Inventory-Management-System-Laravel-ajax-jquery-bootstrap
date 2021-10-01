@@ -43,7 +43,7 @@ class LoginController extends Controller
             }
         } else { //if password is wrong => back to login
             return view('auth.login', [
-                'message' => 'Please Make Shure You Type OK',
+                'message' => 'Email or Password is Invalid',
                 'error' => 'found'
             ]);
         }
@@ -55,3 +55,4 @@ class LoginController extends Controller
         return view('auth.login', ['error' => 'none']);
     }
 }
+
