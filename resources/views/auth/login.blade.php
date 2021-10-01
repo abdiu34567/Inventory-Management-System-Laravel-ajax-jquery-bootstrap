@@ -11,8 +11,7 @@
         <title></title>
 
         <!-- GOOGLE FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
-            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
         <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
 
         <!-- PLUGINS CSS STYLE -->
@@ -43,24 +42,23 @@
                     <div class="card-header bg-primary">
                         <div class="app-brand">
                             <a href="/index.html">
-                                <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg"
-                                    preserveAspectRatio="xMidYMid" width="30" height="33" viewBox="0 0 30 33">
+                                <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="30" height="33" viewBox="0 0 30 33">
                                     <g fill="none" fill-rule="evenodd">
                                         <path class="logo-fill-blue" fill="#7DBCFF" d="M0 4v25l8 4V0zM22 4v25l8 4V0z" />
                                         <path class="logo-fill-white" fill="#FFF" d="M11 4v25l8 4V0z" />
                                     </g>
                                 </svg>
-                                <span class="brand-name">My Dashboard</span>
+                                <span class="brand-name">Melfen Tech</span>
                             </a>
                         </div>
                     </div>
                     <div class="card-body p-5">
-                        <h4 class="text-dark mb-5">LOG IN</h4>
+                        <h4 class="text-dark mb-5">Sign In</h4>
 
                         @if ($error == 'found')
-                            <div class="alert alert-danger" role="alert">
-                                {{ $message }}
-                            </div>
+                        <div class="alert alert-danger" role="alert">
+                            {{ $message }}
+                        </div>
                         @endif
 
                         <form action="{{ url('dashboard') }}" method="POST">
@@ -69,21 +67,19 @@
                             <div class="row">
 
                                 <div class="form-group col-md-12 mb-4">
-                                    <input type="email" name="email" class="form-control input-lg" id="email"
-                                        aria-describedby="emailHelp" value="{{ old('email') }}" placeholder="Email">
+                                    <input type="email" name="email" class="form-control input-lg" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" placeholder="Email">
 
                                     @error('email')
-                                        <p class="text-danger">{{ $message }}</p>
+                                    <p class="text-danger">{{ $message }}</p>
                                     @enderror
                                 </div>
 
 
                                 <div class="form-group col-md-12 ">
-                                    <input type="password" name="password" class="form-control input-lg" id="cpassword"
-                                        placeholder=" Password">
+                                    <input type="password" name="password" class="form-control input-lg" id="cpassword" placeholder=" Password">
 
                                     @error('password')
-                                        <p class="text-danger">{{ $message }}</p>
+                                    <p class="text-danger">{{ $message }}</p>
                                     @enderror
                                 </div>
 
@@ -97,9 +93,8 @@
 
                                     </div>
 
-                                    <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign Up</button>
-                                    <p>Already have an account?
-                                        <a class="text-blue" href="sign-in.html">Sign in</a><br>
+                                    <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign In</button>
+                                    <p>
                                         <a class="text-blue float-right" href="{{ url('forget/password') }}">Forget
                                             Password</a>
                                     </p>
@@ -113,8 +108,8 @@
             </div>
         </div>
         <div class="copyright pl-0">
-            <p class="text-center">&copy; 2018 Copyright Sleek Dashboard Bootstrap Template by
-                <a class="text-primary" href="http://www.iamabdus.com/" target="_blank">Abdus</a>.
+            <p class="text-center">&copy; Design and developed by Melfen Tech
+
             </p>
         </div>
     </div>
