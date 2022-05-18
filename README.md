@@ -1,1 +1,1 @@
-## Inventory Management System - Laravel
+## 🌟🌟 Inventory Management System - Laravel
