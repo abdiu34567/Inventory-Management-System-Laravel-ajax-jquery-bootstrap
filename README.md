@@ -1,1 +1,7 @@
-## 🌟🌟 Inventory Management System - Laravel
+## 🌟🌟 Inventory Management System 
+> Laravel |
+> Ajax |
+> Jquery |
+> Bootstrap
+
+- 👍 Enjoy
